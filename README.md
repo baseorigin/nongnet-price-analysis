@@ -16,16 +16,24 @@ Google Apps Script와 Google Sheets를 활용해 농넷에서 내려받은 농�
 ## Workflow
 
 ```mermaid
-flowchart TD
-    A[농넷 데이터 다운로드] --> B[Google Sheets로 원본 가져오기]
-    B --> C[원본 범위 및 데이터 품질 진단]
-    C --> D[분석 기간·필터·비교축 설정]
-    D --> E[분석 데이터 생성 및 검산]
-    E --> F[가격·물량·시계열 분석]
-    F --> G[산지 × 시장 등 교차분석]
-    G --> H[종합 대시보드 생성]
-    H --> I[ChatGPT 해석 및 기존 분석과 교차검증]
+flowchart LR
+    A["① 데이터 준비<br/>농넷 다운로드 · Sheets 가져오기"]
+    B["② 데이터 진단<br/>원본 범위 · 품질 · 단위 확인"]
+    C["③ 분석 설정<br/>기간 · 필터 · 비교축 선택"]
+    D["④ 분석 실행<br/>검산 · 가격 · 물량 · 시계열"]
+    E["⑤ 결과 시각화<br/>교차분석 · 종합 대시보드"]
+    F["⑥ 결과 해석<br/>ChatGPT 해석 · 교차검증"]
+
+    A --> B --> C --> D --> E --> F
+
+    classDef prepare fill:#eaf3ff,stroke:#3976c7,color:#17385d,stroke-width:1.5px;
+    classDef analyze fill:#e8f5f2,stroke:#168575,color:#164c44,stroke-width:1.5px;
+    classDef review fill:#fff1df,stroke:#c88024,color:#694212,stroke-width:1.5px;
+    class A,B,C prepare;
+    class D,E analyze;
+    class F review;
 ```
+
 
 ## Input Data
 
@@ -96,13 +104,9 @@ Google Sheets에서 분석 결과를 단계별 시트와 종합 대시보드로 
 
 단일 평균가격을 그대로 판매가격으로 적용하기보다, 거래단위·품종·등급·기간 등 비교조건을 확인하고 온라인 시장 데이터 등 다른 자료와 함께 검토하는 가격 의사결정 지원 Workflow를 목표로 합니다.
 
-본 프로젝트는 **「산지조직 실무자 역량강화 (온라인) 2기 교육 — 데이터 기반 농산물 가격분석과 의사결정」**의 농넷 GAS 분석 실습과 연결됩니다.
-
 ## Source Code
 
 본 Repository는 프로젝트의 구조와 구현 결과를 소개하기 위한 Portfolio Repository입니다.
 
-개발·운영용 Source Code는 이 공개 저장소에 게시하지 않습니다.  
-교육 실습에 필요한 GAS 코드는 해당 교육의 교안을 통해 교육생에게 제공합니다.
-
+개발·운영용 Source Code는 이 공개 저장소에 게시하지 않습니다.
 © 2026 baseorigin. All rights reserved.
