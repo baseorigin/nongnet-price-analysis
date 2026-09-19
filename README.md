@@ -109,4 +109,5 @@ Google Sheets에서 분석 결과를 단계별 시트와 종합 대시보드로 
 본 Repository는 프로젝트의 구조와 구현 결과를 소개하기 위한 Portfolio Repository입니다.
 
 개발·운영용 Source Code는 이 공개 저장소에 게시하지 않습니다.
+
 © 2026 baseorigin. All rights reserved.
