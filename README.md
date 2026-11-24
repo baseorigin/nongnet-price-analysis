@@ -218,7 +218,7 @@ GitHub Pages를 통한 직접 실행 링크는 배포 설정 후 추가할 예�
 
 ---
 
-**Developed by BaseOrigin**  
-*Agricultural Data Analytics · AI Transformation · Business Innovation*
+**Developed by baseorigin**  
+Agricultural Data Analytics · AI Transformation · Business Innovation
 
-© 2026 BaseOrigin. All rights reserved.
+© 2026 baseorigin. All rights reserved.
