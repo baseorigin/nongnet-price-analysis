@@ -112,6 +112,8 @@ Google Sheets에서 분석 결과를 단계별 시트와 종합 대시보드로 
 
 ## Agri Market Terminal
 
+![Agri Market Terminal Dashboard](dashboard-preview.png)
+
 **Agri Market Terminal**은 농산물 도매시장 거래 데이터를 탐색하고 시각화하는 인터랙티브 웹앱입니다.
 
 농넷에서 다운로드한 Excel 또는 CSV 파일을 업로드하면 시장별 거래 현황, 기간별 거래 추이, 산지별 분석 및 시장별 비교 결과를 확인할 수 있습니다.
